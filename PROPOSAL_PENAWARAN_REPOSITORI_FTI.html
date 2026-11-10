@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Penawaran Repositori Digital FTI</title>
+    <style>
+        @media print {
+            body { background: #fff; padding: 0; }
+            .no-print { display: none !important; }
+            .page-break { page-break-before: always; }
+            .card { border: none !important; box-shadow: none !important; padding: 0 !important; }
+        }
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #f1f5f9;
+            color: #0f172a;
+            line-height: 1.6;
+            margin: 0;
+            padding: 30px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            padding: 50px 60px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        /* Kop Surat Resmi */
+        .kop {
+            text-align: center;
+            border-bottom: 3px double #000;
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+        }
+        .kop h2 {
+            font-size: 14pt;
+            font-weight: bold;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .kop h1 {
+            font-size: 16pt;
+            font-weight: bold;
+            margin: 3px 0;
+            text-transform: uppercase;
+            color: #c2410c;
+        }
+        .kop p {
+            font-size: 10pt;
+            margin: 0;
+            color: #334155;
+            font-style: italic;
+        }
+        /* Dokumen Metadata */
+        .meta-table {
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 11pt;
+        }
+        .meta-table td {
+            padding: 2px 4px;
+            vertical-align: top;
+        }
+        /* Heading */
+        h2.sec-title {
+            font-size: 13pt;
+            font-weight: bold;
+            border-bottom: 1.5px solid #000;
+            padding-bottom: 3px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        h3.sub-title {
+            font-size: 11pt;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        p, li {
+            font-size: 11pt;
+            text-align: justify;
+            margin-bottom: 8px;
+        }
+        ul, ol {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        /* Tabel Fitur & Manfaat */
+        table.data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 10pt;
+        }
+        table.data-table th, table.data-table td {
+            border: 1px solid #334155;
+            padding: 7px 10px;
+            text-align: left;
+        }
+        table.data-table th {
+            background-color: #f8fafc;
+            font-weight: bold;
+        }
+        .highlight-box {
+            background-color: #fff7ed;
+            border-left: 4px solid #ea580c;
+            padding: 10px 14px;
+            margin: 15px 0;
+            font-size: 10.5pt;
+        }
+        /* Tanda Tangan */
+        .ttd-container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 11pt;
+        }
+        .ttd-box {
+            text-align: center;
+            width: 250px;
+        }
+        .ttd-space {
+            height: 70px;
+        }
+        /* Print toolbar */
+        .toolbar {
+            max-width: 800px;
+            margin: 0 auto 15px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn-print {
+            background-color: #ea580c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: sans-serif;
+            font-size: 13px;
+        }
+        .btn-print:hover {
+            background-color: #c2410c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="toolbar no-print">
+        <span style="font-family:sans-serif; font-size:13px; color:#475569;">
+            Dokumen Siap Cetak / Simpan PDF (Kertas A4)
+        </span>
+        <button class="btn-print" onclick="window.print()">🖨️ Cetak / Simpan PDF (Ctrl + P)</button>
+    </div>
+
+    <div class="container">
+        <!-- KOP SURAT -->
+        <div class="kop">
+            <h2>Kementerian Pendidikan Tinggi, Riset, dan Teknologi</h2>
+            <h1>Fakultas Teknologi Informasi</h1>
+            <p>Kampus Terpadu, Gedung B Lantai 2 • Telp: (021) 7890-FTI ext. 104 • Email: repo-fti@universitas.ac.id</p>
+        </div>
+
+        <!-- NOMOR SURAT -->
+        <table class="meta-table">
+            <tr>
+                <td style="width: 120px;">Nomor Dokumen</td>
+                <td style="width: 10px;">:</td>
+                <td>01/PROP-REPO/FTI/XI/2026</td>
+            </tr>
+            <tr>
+                <td>Lampiran</td>
+                <td>:</td>
+                <td>1 (Satu) Berkas Dokumentasi Sistem</td>
+            </tr>
+            <tr>
+                <td>Perihal</td>
+                <td>:</td>
+                <td><strong>Penawaran & Permohonan Audiensi Implementasi Sistem Repositori Digital FTI</strong></td>
+            </tr>
+        </table>
+
+        <div style="margin-bottom: 20px;">
+            Kepada Yth.<br>
+            <strong>1. Wakil Dekan II (Bidang Umum, Keuangan, Sarpras & Sistem Informasi)</strong><br>
+            <strong>2. Ketua Program Studi S1 Sistem Informasi</strong><br>
+            <strong>3. Ketua Program Studi S1 Ilmu Komputer</strong><br>
+            Fakultas Teknologi Informasi<br>
+            Di Tempat
+        </div>
+
+        <p>Dengan hormat,</p>
+        <p>
+            Sehubungan dengan komitmen peningkatan mutu tata kelola akademik, efisiensi pelayanan administrasi kelulusan mahasiswa, serta percepatan diseminasi karya ilmiah sivitas akademika Fakultas Teknologi Informasi dalam rangka pemenuhan standar <strong>Akreditasi LAM-INFOKOM (Kriteria 7: Penelitian dan Kriteria 9: Luaran & Capaian Tridharma)</strong>, bersama surat ini kami mengajukan dokumen penawaran implementasi:
+        </p>
+
+        <div class="highlight-box">
+            <strong>"Sistem Repositori Digital Institusi Fakultas Teknologi Informasi (FTI Repository)"</strong><br>
+            <em>Portal Satu Pintu Deposit Skripsi S1 Sistem Informasi & S1 Ilmu Komputer, Uji Plagiasi Turnitin, dan Penerbitan Otomatis Surat Bebas Perpustakaan.</em>
+        </div>
+
+        <p>
+            Aplikasi ini telah selesai kami kembangkan dalam versi fungsional penuh (<em>ready-to-deploy</em>) tanpa ketergantungan biaya lisensi vendor pihak ketiga. Kami memohon kesediaan waktu Bapak/Ibu untuk berkenan memberikan kesempatan <strong>Audiensi dan Demonstrasi Langsung (Live System Demo)</strong>.
+        </p>
+
+        <h2 class="sec-title">1. Latar Belakang, Rumusan Masalah & Tujuan</h2>
+        <p>
+            Meskipun universitas telah memiliki repositori perpustakaan sentral, repositori sentral tersebut belum mampu mengakomodasi kebutuhan spesifik sivitas akademika Fakultas Teknologi Informasi (FTI). Mahasiswa FTI sering mengalami kesulitan mencari topik skripsi yang linier, terjadi duplikasi topik usang, artefak software (source code/dataset) tidak terarsip, dan alur bebas perpustakaan lokal FTI belum terotomasi.
+        </p>
+
+        <h3 class="sub-title">A. Rumusan Masalah:</h3>
+        <ol>
+            <li>Bagaimana mempermudah mahasiswa FTI menemukan ide judul skripsi yang orisinal dan memiliki <em>research gap</em> jelas berdasarkan taksonomi keilmuan SI dan Ilkom?</li>
+            <li>Bagaimana mendokumentasikan luaran skripsi FTI yang mencakup naskah PDF sekaligus artefak perangkat lunak (repositori kode, dataset, dan model AI)?</li>
+            <li>Bagaimana memfasilitasi pencocokan (<em>advisor matching</em>) antara topik skripsi mahasiswa dengan kepakaran dosen pembimbing di lingkungan FTI?</li>
+            <li>Bagaimana mengamankan karya intelektual sivitas akademika FTI dari ancaman plagiarisme dengan mengadopsi standar keamanan UNAIR (ADLN)?</li>
+            <li>Bagaimana mengotomatisasi penerbitan Surat Bebas Perpustakaan FTI digital ber-QR Code untuk mempercepat yudisium?</li>
+        </ol>
+
+        <h3 class="sub-title">B. Tujuan Pengembangan Sistem:</h3>
+        <ul>
+            <li><strong>Tujuan Umum</strong>: Mewujudkan portal repositori institusi mandiri FTI untuk mendokumentasikan, mengamankan, dan mendiseminasikan karya ilmiah serta artefak teknologi sivitas akademika secara berkelanjutan.</li>
+            <li><strong>Tujuan Khusus</strong>: Mempercepat masa studi mahasiswa (lulus tepat waktu) via fitur <em>Research Gap & Topic Finder</em>; mendokumentasikan artefak kode/dataset; mendukung borang Akreditasi LAM-INFOKOM (Kriteria 7 & 9); serta menghadirkan administrasi yudisium paperless.</li>
+        </ul>
+
+        <h2 class="sec-title">2. Keunikan & Pembeda Utama (FTI Repository vs. Repositori Universitas)</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th style="width: 25%;">Indikator</th>
+                    <th style="width: 35%;">Repositori Sentral Universitas</th>
+                    <th style="width: 40%;">Repositori Digital FTI (Sistem Ini)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Taksonomi Keilmuan</strong></td>
+                    <td>Campuran umum seluruh fakultas (Hukum, Ekonomi, dll).</td>
+                    <td><strong>Spesifik Rumpun IT</strong>: S1 Sistem Informasi (TOGAF, BI, UI/UX) & S1 Ilmu Komputer (AI, Cyber Security, Cloud).</td>
+                </tr>
+                <tr>
+                    <td><strong>Pencarian Ide Topik & Celah Riset</strong></td>
+                    <td><strong>Tidak Ada</strong>. Hanya pencarian kata kunci teks biasa; mahasiswa harus baca manual ratusan skripsi.</td>
+                    <td><strong>Tersedia Modul Riset (/topics)</strong>: Menyajikan 6 rumpun bidang ilmu, 18+ ide celah riset siap diteliti, dan rujukan naskah terdahulu.</td>
+                </tr>
+                <tr>
+                    <td><strong>Artefak Perangkat Lunak</strong></td>
+                    <td>Hanya menampung dokumen PDF.</td>
+                    <td><strong>Mendukung Multi-Artefak</strong>: Link repositori kode GitHub/GitLab, model AI weights, dan dataset riset.</td>
+                </tr>
+                <tr>
+                    <td><strong>Advisor Matching</strong></td>
+                    <td>Nama dosen teks pasif.</td>
+                    <td><strong>Pemetaan Kepakaran Dosen</strong>: Pencocokan topik mahasiswa dengan keahlian lab & roadmap riset dosen.</td>
+                </tr>
+                <tr>
+                    <td><strong>Keamanan (UNAIR ADLN)</strong></td>
+                    <td>Akses umum atau biner.</td>
+                    <td><strong>Multi-Tiered Access</strong>: Bab 1 Open Access, Bab 2-5 dilindungi SSO, Watermark dinamis ber-IP/waktu, & SHA-256 fingerprint.</td>
+                </tr>
+                <tr>
+                    <td><strong>Bebas Pustaka Yudisium</strong></td>
+                    <td>Bebas pustaka universitas umum.</td>
+                    <td><strong>Surat Bebas Pustaka FTI Otomatis</strong>: Validasi Turnitin (< 20%) & kelengkapan kode program ber-QR Code & TTE.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="sec-title">3. Solusi & Fitur Unggulan Sistem</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th style="width: 25%;">Fitur Utama</th>
+                    <th>Spesifikasi & Cara Kerja</th>
+                    <th style="width: 30%;">Manfaat Bagi FTI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Unggah Mandiri (Self-Archiving)</strong></td>
+                    <td>Formulir bertahap (Metadata, Penulis, Pembimbing, Abstrak, Berkas PDF) yang ramah pengguna.</td>
+                    <td>Paperless & efisiensi waktu staf tata usaha perpustakaan.</td>
+                </tr>
+                <tr>
+                    <td><strong>Cek Plagiasi & Syarat Yudisium</strong></td>
+                    <td>Validasi ambang batas Turnitin (< 20%) dan integrasi berkas lembar pengesahan dewan penguji.</td>
+                    <td>Menjaga integritas akademik fakultas dari risiko plagiarisme.</td>
+                </tr>
+                <tr>
+                    <td><strong>Surat Bebas Pustaka Ber-QR Code</strong></td>
+                    <td>Penerbitan otomatis surat keterangan bebas perpustakaan ber-Kop resmi fakultas saat naskah disetujui.</td>
+                    <td>Mahasiswa dapat mencetak bukti bebas pustaka mandiri dalam hitungan menit.</td>
+                </tr>
+                <tr>
+                    <td><strong>Faceted Search & PDF Viewer</strong></td>
+                    <td>Pencarian multi-filter (Jurusan SI/Ilkom, Tahun, Tipe Naskah) & pembaca PDF in-browser.</td>
+                    <td>Karya ilmiah FTI dapat diakses dan disitir akademisi global.</td>
+                </tr>
+                <tr>
+                    <td><strong>Eksplorasi Ide Judul & Celah Riset</strong></td>
+                    <td>Katalog 6 rumpun keilmuan FTI, 18+ celah riset (research gap), dan pemetaan kepakaran dosen pembimbing.</td>
+                    <td>Mempercepat mahasiswa menemukan topik skripsi orisinal dan lulus tepat waktu.</td>
+                </tr>
+                <tr>
+                    <td><strong>Sitasi Otomatis (1-Click)</strong></td>
+                    <td>Menghasilkan kutipan format standar APA 7th, IEEE, Harvard, dan BibTeX.</td>
+                    <td>Meningkatkan jumlah sitasi publikasi dosen & mahasiswa FTI.</td>
+                </tr>
+                <tr>
+                    <td><strong>Keamanan Berlapis (Model UNAIR / ADLN)</strong></td>
+                    <td>Akses naskah lengkap dilindungi SSO, watermark dinamis resmi per halaman, fitur Closed Embargo (Paten/NDA), dan fingerprint SHA-256.</td>
+                    <td>Perlindungan hak cipta karya sivitas FTI dari pembajakan dan plagiasi komersial luar.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="page-break"></div>
+
+        <h2 class="sec-title">4. Nilai Strategis Bagi Dekanat & Program Studi</h2>
+        
+        <h3 class="sub-title">A. Nilai Manfaat Bagi Wakil Dekan II (Bidang Umum, Keuangan, Sarpras & TI):</h3>
+        <ul>
+            <li><strong>Zero License Cost</strong>: Sistem dibangun mandiri oleh potensi sivitas akademika sendiri tanpa biaya sewa lisensi tahunan ke vendor luar.</li>
+            <li><strong>Infrastruktur Mandiri</strong>: Dapat berjalan di server lokal kampus (On-Premise / VM / Intranet) yang telah dimiliki fakultas.</li>
+            <li><strong>Arsip Terpusat</strong>: Standarisasi format dokumen PDF terpusat dan terhindar dari risiko kehilangan fisik.</li>
+        </ul>
+
+        <h3 class="sub-title">B. Nilai Manfaat Bagi Ketua Program Studi (SI & Ilmu Komputer):</h3>
+        <ul>
+            <li><strong>Bahan Borang Akreditasi LAM-INFOKOM</strong>: Menyediakan bukti sahih Kriteria 7 (Penelitian) dan Kriteria 9 (Luaran & Capaian Tridharma Mahasiswa/Dosen) yang dapat ditarik sewaktu-waktu.</li>
+            <li><strong>Pemetaan Rumpun Keilmuan</strong>: Memudahkan Kaprodi melihat distribusi topik skripsi mahasiswa (misal: TOGAF, BI, COBIT pada Prodi SI; AI, Cyber Security, Cloud pada Prodi Ilkom).</li>
+            <li><strong>Transparansi Dewan Pembimbing</strong>: Dasbor khusus dosen pembimbing untuk memvalidasi naskah bimbingannya sebelum terbit.</li>
+        </ul>
+
+        <h2 class="sec-title">5. Kesiapan Sistem & Rencana Pelaksanaan</h2>
+        <p>
+            Sistem saat ini telah selesai dikembangkan dan telah melewati tahap pengujian internal (Build Status: 100% Sukses). Kami mengusulkan jadwal implementasi sebagai berikut:
+        </p>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th style="width: 20%;">Waktu</th>
+                    <th style="width: 40%;">Agenda Kegiatan</th>
+                    <th>Output / Hasil</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Minggu I</strong></td>
+                    <td>Audiensi & Live Demo Bersama WD 2 & Kaprodi</td>
+                    <td>Kesepakatan alur & penyesuaian aturan lokal.</td>
+                </tr>
+                <tr>
+                    <td><strong>Minggu II</strong></td>
+                    <td>Uji Coba Terbatas (Pilot Testing 20 Mahasiswa)</td>
+                    <td>Verifikasi alur dari unggah hingga cetak bebas perpus.</td>
+                </tr>
+                <tr>
+                    <td><strong>Minggu III</strong></td>
+                    <td>Pelatihan Operator / Pustakawan FTI</td>
+                    <td>Staf siap mengoperasikan dasbor validasi.</td>
+                </tr>
+                <tr>
+                    <td><strong>Minggu IV</strong></td>
+                    <td>Peluncuran Penuh (Go-Live) Periode Wisuda FTI</td>
+                    <td>Penerapan resmi untuk seluruh lulusan FTI.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="sec-title">6. Penutup & Tindak Lanjut</h2>
+        <p>
+            Demikian proposal penawaran ini kami ajukan. Kami meyakini implementasi sistem ini akan membawa dampak efisiensi nyata bagi Fakultas Teknologi Informasi. Besar harapan kami agar Bapak/Ibu Wakil Dekan II beserta Bapak/Ibu Ketua Program Studi berkenan meluangkan waktu untuk agenda demonstrasi sistem.
+        </p>
+        <p>Atas perhatian dan kesempatan yang diberikan, kami ucapkan terima kasih.</p>
+
+        <!-- TANDA TANGAN -->
+        <div class="ttd-container">
+            <div class="ttd-box">
+                Mengetahui,<br>
+                <strong>Ketua Program Studi</strong><br>
+                Fakultas Teknologi Informasi
+                <div class="ttd-space"></div>
+                ( .................................................... )<br>
+                NIP.
+            </div>
+
+            <div class="ttd-box">
+                Hormat kami,<br>
+                <strong>Skillance Digital Indonesia</strong><br>
+                Tim Pengembang Teknologi
+                <div class="ttd-space"></div>
+                ( <strong>Muh Arsyad Ramsi</strong> )<br>
+                Founder / Lead Developer<br>
+                <span style="font-size: 9.5pt; color: #475569;">Skillance Digital Indonesia</span>
+            </div>
+        </div>
+
+        <div style="margin-top: 35px; font-size: 9pt; color: #64748b; border-top: 1px solid #cbd5e1; pt-2;">
+            <strong>Tembusan:</strong><br>
+            1. Dekan Fakultas Teknologi Informasi<br>
+            2. Kepala UPT Perpustakaan FTI<br>
+            3. Arsip Fakultas
+        </div>
+    </div>
+
+</body>
+</html>
